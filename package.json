@@ -1,6 +1,6 @@
 {
   "name": "lg-thumbnail.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Thumbnail module for lightgallery.",
   "keywords": [
     "gallery",
@@ -53,7 +53,7 @@
     "build-debug": "browserify src/lg-thumbnail.js -s LgThumbnail -t [babelify] -p [bannerify --file .banner ] -o dist/lg-thumbnail.js",
     "build-min": "uglifyjs dist/lg-thumbnail.js --comments '/@license/' -m screw_ie8=true -c screw_ie8=true,unused=false -o dist/lg-thumbnail.min.js",
     "build-watch": "watchify src/lg-thumbnail.js -s LgThumbnail -t [babelify] -o dist/lg-thumbnail.js -v",
-    "dev": "watchify src/lg-thumbnail.js -s LgThumbnail -t [babelify] -o ../lightgallery.js/lightgallery/js/lg-thumbnail.js -v",
+    "dev": "watchify src/lg-thumbnail.js -s LgThumbnail -t [babelify] -o ../lg/lightgallery.js/lightgallery/js/lg-thumbnail.js -v",
     "lint": "jshint src/*.js"
   }
 }

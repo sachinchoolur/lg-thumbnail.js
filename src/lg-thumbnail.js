@@ -368,7 +368,7 @@ Thumbnail.prototype.enableThumbSwipe = function() {
     utils.on(_this.core.outer.querySelector('.lg-thumb'), 'touchstart.lg', function(e) {
         if (_this.thumbTotalWidth > _this.thumbOuterWidth) {
             e.preventDefault();
-            startCoords = e.originalEvent.targetTouches[0].pageX;
+            startCoords = e.targetTouches[0].pageX;
             _this.thumbClickable = false;
         }
     });
@@ -376,7 +376,7 @@ Thumbnail.prototype.enableThumbSwipe = function() {
     utils.on(_this.core.outer.querySelector('.lg-thumb'), 'touchmove.lg', function(e) {
         if (_this.thumbTotalWidth > _this.thumbOuterWidth) {
             e.preventDefault();
-            endCoords = e.originalEvent.targetTouches[0].pageX;
+            endCoords = e.targetTouches[0].pageX;
             isMoved = true;
 
             utils.addClass(_this.thumbOuter, 'lg-dragging');
