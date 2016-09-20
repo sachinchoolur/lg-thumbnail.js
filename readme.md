@@ -2,7 +2,7 @@
 ![bower](https://img.shields.io/bower/v/lg-thumbnail.js.svg)
 ![npm](https://img.shields.io/npm/v/lg-thumbnail.js.svg)
 
-# Video module for [lightgallery.js](http://sachinchoolur.github.io/lightgallery.js/)
+# Thumbnail module for [lightgallery.js](http://sachinchoolur.github.io/lightgallery.js/)
 Full featured javascript gallery. Zero dependencies.
 ![lightgallery](https://raw.githubusercontent.com/sachinchoolur/lightGallery/master/lib/lg.png)
 
