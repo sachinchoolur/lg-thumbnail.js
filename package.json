@@ -1,6 +1,6 @@
 {
   "name": "lg-thumbnail.js",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Thumbnail module for lightgallery.",
   "keywords": [
     "gallery",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/sachinchoolur/lg-thumbnail.js/issues"
   },
-  "license": "Apache-2.0",
+  "license": "GPLv3",
   "author": {
     "name": "Sachin N",
     "email": "sachi77n@gmail.com",
@@ -54,6 +54,6 @@
     "build-min": "uglifyjs dist/lg-thumbnail.js --comments '/@license/' -m screw_ie8=true -c screw_ie8=true,unused=false -o dist/lg-thumbnail.min.js",
     "build-watch": "watchify src/lg-thumbnail.js -s LgThumbnail -t [babelify] -o dist/lg-thumbnail.js -v",
     "dev": "watchify src/lg-thumbnail.js -s LgThumbnail -t [babelify] -o ../lg/lightgallery.js/lightgallery/js/lg-thumbnail.js -v",
-    "lint": "jshint src/*.js"
+    "lint": "jshint src"
   }
 }

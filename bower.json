@@ -1,6 +1,6 @@
 {
   "name": "lg-thumbnail.js",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Thumbnail module for lightgallery.",
   "main": [
       "dist/lg-thumbnail.min.js"
@@ -20,7 +20,7 @@
       "type": "git",
       "url": "git://github.com/sachinchoolur/lg-thumbnail.js.git"
   },
-  "license": "Apache-2.0",
+  "license": "GPLv3",
   "ignore": [
       "README.md"
   ]
