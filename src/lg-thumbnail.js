@@ -448,10 +448,12 @@ Thumbnail.prototype.thumbkeyPress = function() {
     });
 };
 
-Thumbnail.prototype.destroy = function() {
+Thumbnail.prototype.destroy = function(d) {
     if (this.core.s.thumbnail && this.core.items.length > 1) {
         utils.off(window, '.lgthumb');
-        this.thumbOuter.parentNode.removeChild(this.thumbOuter);
+        if(!d) {
+            this.thumbOuter.parentNode.removeChild(this.thumbOuter);
+        }
         utils.removeClass(this.core.outer, 'lg-has-thumb');
 
         var lgScript = document.getElementsByClassName('lg-script');
