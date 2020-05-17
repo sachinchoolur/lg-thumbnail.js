@@ -424,7 +424,7 @@ Thumbnail.prototype.toggle = function() {
     var _this = this;
     if (_this.core.s.toggleThumb) {
         utils.addClass(_this.core.outer, 'lg-can-toggle');
-        _this.thumbOuter.insertAdjacentHTML('beforeend', '<span class="lg-toggle-thumb lg-icon"></span>');
+        _this.thumbOuter.insertAdjacentHTML('beforeend', '<button aria-label="Toggle thumbnails" class="lg-toggle-thumb lg-icon"></button>');
         utils.on(_this.core.outer.querySelector('.lg-toggle-thumb'), 'click.lg', function() {
             if (utils.hasClass(_this.core.outer, 'lg-thumb-open')) {
                 utils.removeClass(_this.core.outer, 'lg-thumb-open');
