@@ -1,5 +1,5 @@
 /**!
- * lg-thumbnail.js | 1.0.0 | August 8th 2018
+ * lg-thumbnail.js | 1.2.0 | May 20th 2020
  * http://sachinchoolur.github.io/lg-thumbnail.js
  * Copyright (c) 2016 Sachin N; 
  * @license GPLv3 
@@ -447,7 +447,7 @@
         var _this = this;
         if (_this.core.s.toggleThumb) {
             utils.addClass(_this.core.outer, 'lg-can-toggle');
-            _this.thumbOuter.insertAdjacentHTML('beforeend', '<span class="lg-toggle-thumb lg-icon"></span>');
+            _this.thumbOuter.insertAdjacentHTML('beforeend', '<button aria-label="Toggle thumbnails" class="lg-toggle-thumb lg-icon"></button>');
             utils.on(_this.core.outer.querySelector('.lg-toggle-thumb'), 'click.lg', function () {
                 if (utils.hasClass(_this.core.outer, 'lg-thumb-open')) {
                     utils.removeClass(_this.core.outer, 'lg-thumb-open');
